@@ -19,7 +19,7 @@ node app.js
 
 После запуска сервер будет доступен по адресу http://localhost:3000. Для генерации QR-кода просто отправьте GET-запрос на /generate.
 
-Пример кода программы:
+Код программы:
 
 ```javascript
 const express = require('express');
