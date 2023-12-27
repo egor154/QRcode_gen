@@ -20,7 +20,6 @@ node app.js
 
 Пример кода программы:
 
-javascript
 const express = require('express');
 const QRCode = require('qrcode');
 
