@@ -31,14 +31,14 @@ app.get('/generate', async (req, res) => {
 
     try {
         const qr = await QRCode.toDataURL(url);
-        res.send(<img src="${qr}" />); // Выводим QR-код на страницу
+        res.send(`<img src="${qr}" />`); // Выводим QR-код на страницу
     } catch (err) {
         res.status(500).send('Ошибка при создании QR-кода.');
     }
 });
 
 app.listen(PORT, () => {
-    console.log(Сервер запущен по адресу http://localhost:${PORT});
+    console.log(`Сервер запущен по адресу http://localhost:${PORT}`);
 });
 
 ## Лицензия
